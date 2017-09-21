@@ -99,7 +99,14 @@
                             <outlet property="delegate" destination="9Jt-iW-6pC" id="66Z-rc-XoZ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="1Ql-Sm-XCz"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="1Ql-Sm-XCz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dNy-kf-dAC"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="1tZ-EZ-Ifu" id="pB1-Tg-I20"/>
+                        <outlet property="firstNameTextField" destination="Pgc-eB-ONj" id="Qs5-vy-LyD"/>
+                        <outlet property="lastNameTextField" destination="XhN-sn-tXo" id="XzI-78-QQq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKG-be-w0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
