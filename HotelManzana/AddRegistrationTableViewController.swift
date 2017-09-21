@@ -13,6 +13,16 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
+        let firstName = firstNameTextField.text ?? ""
+        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        
+        print("DONE TAPPED")
+        print("firstName: \(firstName)")
+        print("lastName: \(lastName)")
+        print("email: \(email)")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +31,6 @@ class AddRegistrationTableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
     }
 
 }

@@ -100,7 +100,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="1Ql-Sm-XCz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dNy-kf-dAC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dNy-kf-dAC">
+                            <connections>
+                                <action selector="doneBarButtonTapped:" destination="9Jt-iW-6pC" id="hca-c1-mFQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="emailTextField" destination="1tZ-EZ-Ifu" id="pB1-Tg-I20"/>
