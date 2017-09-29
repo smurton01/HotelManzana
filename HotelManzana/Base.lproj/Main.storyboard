@@ -131,6 +131,9 @@
                                                     <date key="date" timeIntervalSinceReferenceDate="527712451.45539099">
                                                         <!--2017-09-21 18:47:31 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="datePickerValueChanged:" destination="9Jt-iW-6pC" eventType="valueChanged" id="WgD-Z1-GSO"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -176,6 +179,9 @@
                                                     <date key="date" timeIntervalSinceReferenceDate="528133161.11483401">
                                                         <!--2017-09-26 15:39:21 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="datePickerValueChanged:" destination="9Jt-iW-6pC" eventType="valueChanged" id="WVH-0w-jXX"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>

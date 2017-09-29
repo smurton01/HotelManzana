@@ -50,5 +50,9 @@ class AddRegistrationTableViewController: UITableViewController {
         
         checkOutDatePicker.minimumDate = checkInDatePicker.date.addingTimeInterval(86400)
     }
-
+    
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        updateDateViews()
+    }
+    
 }
