@@ -23,11 +23,15 @@ class AddRegistrationTableViewController: UITableViewController {
         let firstName = firstNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
         let email = emailTextField.text ?? ""
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
         
         print("DONE TAPPED")
         print("firstName: \(firstName)")
         print("lastName: \(lastName)")
         print("email: \(email)")
+        print("checkIn: \(checkInDate)")
+        print("checkOut: \(checkOutDate)")
     }
     
     override func viewDidLoad() {
@@ -35,6 +39,8 @@ class AddRegistrationTableViewController: UITableViewController {
         let midnightToday = Calendar.current.startOfDay(for: Date ())
         checkInDatePicker.minimumDate = midnightToday
         checkInDatePicker.date = midnightToday
+        
+        updateDateViews()
     }
 
     override func didReceiveMemoryWarning() {
